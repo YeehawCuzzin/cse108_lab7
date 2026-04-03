@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 108 Lab 6 - Grades App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>CSE 108 - Lab 6 Grades App</h1>
+        <p>Manage student grades using a Flask web app and REST API.</p>
+
+        <div id="message" class="message"></div>
+
+        <section class="card">
+            <h2>Get One Student Grade</h2>
+            <input type="text" id="searchName" placeholder="Enter student name">
+            <button id="getGradeBtn">Get Grade</button>
+            <div id="studentResult" class="result-box">No student selected yet.</div>
+        </section>
+
+        <section class="card">
+            <h2>Add New Student</h2>
+            <input type="text" id="addName" placeholder="Enter student name">
+            <input type="number" id="addGrade" placeholder="Enter grade" step="0.1">
+            <button id="addStudentBtn">Add Student</button>
+        </section>
+
+        <section class="card">
+            <h2>Edit Student Grade</h2>
+            <input type="text" id="editName" placeholder="Enter student name">
+            <input type="number" id="editGrade" placeholder="Enter new grade" step="0.1">
+            <button id="editStudentBtn">Update Grade</button>
+        </section>
+
+        <section class="card">
+            <h2>Delete Student</h2>
+            <input type="text" id="deleteName" placeholder="Enter student name">
+            <button id="deleteStudentBtn" class="danger">Delete Student</button>
+        </section>
+
+        <section class="card">
+            <div class="table-header">
+                <h2>All Students and Grades</h2>
+                <button id="refreshBtn">Refresh Table</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="gradesTableBody">
+                    <tr>
+                        <td colspan="2">Loading data...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
