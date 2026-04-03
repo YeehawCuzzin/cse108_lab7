@@ -16,19 +16,6 @@ The application is a full-stack Flask web app that allows users to manage studen
 - SQLite (database)
 - HTML, CSS, JavaScript (frontend)
 
-# Project Structure
-cse108_lab7/
-│
-├── app.py                # Flask backend + REST API + database logic
-├── requirements.txt     # Python dependencies
-│
-├── templates/
-│   └── index.html       # Frontend UI
-│
-├── static/
-│   ├── script.js        # API calls and UI logic
-│   └── styles.css       # Styling
-
 # Setup Instructions
 git clone https://github.com/YOUR_USERNAME/cse108_lab7.git
 cd cse108_lab7
