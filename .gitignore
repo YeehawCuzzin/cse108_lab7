@@ -1,3 +1,20 @@
+# --- Lab 7 / Flask App Specific ---
+*.db
+*.sqlite3
+
+# Flask instance folder (if ever created)
+instance/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# PythonAnywhere (optional safety)
+*.log
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
